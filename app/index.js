@@ -13,7 +13,7 @@ telegramToken = telegramToken.replace("\n", "");*/
 
 const Discord = require("discord.js"); //discord
 const DiscordBot = new Discord.Client();
-const discordToken = fs.readFileSync("./app/discordToken.txt", "utf8");
+let discordToken = fs.readFileSync("./app/discordToken.txt", "utf8");
 discordToken = discordToken.replace("\n", "");
 console.log("Logging into Discord?");
 DiscordBot.login(discordToken);
